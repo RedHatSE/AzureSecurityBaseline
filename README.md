@@ -8,6 +8,7 @@ First open up and AzureCLI.
 
 and create a file deploy.yml  and include the following text
 
+<p> 
 ---
 
 - name: setup system
@@ -57,6 +58,7 @@ and create a file deploy.yml  and include the following text
                       value: synnexdbtest1     
 
 
+</p>
 
 The next set of inscrutions are located here. 
 
