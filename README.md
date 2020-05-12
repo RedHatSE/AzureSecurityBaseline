@@ -8,7 +8,7 @@ First open up and AzureCLI.
 
 and create a file deploy.yml  and include the following text
 
-<div> 
+<div class="yaml"> 
 ---
 
 - name: setup system
