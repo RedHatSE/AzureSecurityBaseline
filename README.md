@@ -12,51 +12,51 @@ and create a file deploy.yml  and include the following text
 
 >---
 
->- name: setup system
+- name: setup system
 
->  hosts: localhost
+  hosts: localhost
 
->  tasks:
+  tasks:
 
- >   - name: azure create
+   - name: azure create
 
- >     azure_rm_deployment:
+     azure_rm_deployment:
 
-  >       resource_group: resourcetempl
+         resource_group: resourcetempl
 
-   >      location: east US
+         location: east US
 
-    >     state: present
+         state: present
 
-     >    name: resourcetempl
+         name: resourcetempl
 
-     >    template_link: 'https://raw.githubusercontent.com/microsoft/MCW-Security-baseline-on-Azure/master/Hands-on%20lab/AzureTemplate/template.json'
+         template_link: 'https://raw.githubusercontent.com/microsoft/MCW-Security-baseline-on-Azure/master/Hands-on%20lab/AzureTemplate/template.json'
 
-    >     parameters:
+         parameters:
 
-     >         adminUsername:
+              adminUsername:
 
-      >                value: wsadmin
+                      value: wsadmin
 
-       >       adminPassword:
+             adminPassword:
 
-        >              value: p@ssword1rocks
+                      value: p@ssword1rocks
 
-         >     databaseName:
+             databaseName:
 
-          >            value: microsoftbaselinesecurity
+                      value: microsoftbaselinesecurity
 
-           >   userObjectId:
+             userObjectId:
 
-            >          value: 
+                     value: 
 
-             > vmSize:
+             vmSize:
 
-             >        value: Standard_E2s_v3
+                     value: Standard_E2s_v3
 
-             > sqlservername:
+             sqlservername:
 
-             >         value: synnexdbtest1     
+                     value: synnexdbtest1     
 
 
 </div>
