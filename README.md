@@ -7,7 +7,7 @@ We are going to Use Red Hat Software Ansible to help with the Security Baseline 
 First open up and AzureCLI. 
 
 and create a file deploy.yml  and include the following text
-"
+
 ---
 
 - name: setup system
@@ -56,5 +56,9 @@ and create a file deploy.yml  and include the following text
 
                       value: synnexdbtest1     
 
-"
+
+
+The next set of inscrutions are located here. 
+
+
 https://github.com/microsoft/MCW-Security-baseline-on-Azure/blob/master/Hands-on%20lab/Before%20the%20HOL%20-%20Security%20baseline%20on%20Azure.md#task-1-deploy-resources-to-azure
