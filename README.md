@@ -9,53 +9,54 @@ First open up and AzureCLI.
 and create a file deploy.yml  and include the following text
 
 <div class="yaml"> 
----
 
-- name: setup system
+>---
 
-   hosts: localhost
+>- name: setup system
 
-   tasks:
+>  hosts: localhost
 
-     - name: azure create
+>  tasks:
 
-       azure_rm_deployment:
+ >   - name: azure create
 
-         resource_group: resourcetempl
+ >     azure_rm_deployment:
 
-         location: east US
+  >       resource_group: resourcetempl
 
-         state: present
+   >      location: east US
 
-         name: resourcetempl
+    >     state: present
 
-        template_link: 'https://raw.githubusercontent.com/microsoft/MCW-Security-baseline-on-Azure/master/Hands-on%20lab/AzureTemplate/template.json'
+     >    name: resourcetempl
 
-         parameters:
+     >    template_link: 'https://raw.githubusercontent.com/microsoft/MCW-Security-baseline-on-Azure/master/Hands-on%20lab/AzureTemplate/template.json'
 
-              adminUsername:
+    >     parameters:
 
-                      value: wsadmin
+     >         adminUsername:
 
-              adminPassword:
+      >                value: wsadmin
 
-                      value: p@ssword1rocks
+       >       adminPassword:
 
-              databaseName:
+        >              value: p@ssword1rocks
 
-                      value: microsoftbaselinesecurity
+         >     databaseName:
 
-              userObjectId:
+          >            value: microsoftbaselinesecurity
 
-                      value: 
+           >   userObjectId:
 
-              vmSize:
+            >          value: 
 
-                      value: Standard_E2s_v3
+             > vmSize:
 
-              sqlservername:
+             >        value: Standard_E2s_v3
 
-                      value: synnexdbtest1     
+             > sqlservername:
+
+             >         value: synnexdbtest1     
 
 
 </div>
