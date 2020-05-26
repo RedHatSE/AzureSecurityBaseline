@@ -1,0 +1,45 @@
+- name: setup system
+
+  hosts: localhost
+
+  tasks:
+
+   - name: azure create
+
+     azure_rm_deployment:
+
+         resource_group: resourcetempl
+
+         location: east US
+
+         state: present
+
+         name: resourcetempl
+
+         template_link: 'https://raw.githubusercontent.com/microsoft/MCW-Security-baseline-on-Azure/master/Hands-on%20lab/AzureTemplate/template.json'
+
+         parameters:
+
+              adminUsername:
+
+                      value: wsadmin
+
+             adminPassword:
+
+                      value: p@ssword1rocks
+
+             databaseName:
+
+                      value: microsoftbaselinesecurity
+
+             userObjectId:
+
+                     value: 
+
+             vmSize:
+
+                     value: Standard_E2s_v3
+
+             sqlservername:
+
+                     value: synnexdbtest1     
