@@ -1,0 +1,21 @@
+- name: setup system
+
+  hosts: localhost
+
+  tasks:
+
+   - name: azure create
+
+     azure_rm_deployment:
+
+         resource_group: AZ500mod2lab2
+
+         location: east US
+
+         state: present
+
+         name: az500mod2lab2
+
+         template_link: 'https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab02/template.json'
+
+         
