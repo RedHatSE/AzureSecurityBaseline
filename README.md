@@ -6,9 +6,33 @@ We are going to Use Red Hat Software Ansible to help with the Security Baseline 
 
 First open up and AzureCLI. 
 
-and create a file deploy.yml and include the following text. I have also already completed them within this repo for you. 
+and create a file .yml and include the following text. I have also already completed them within this repo for you. 
 
-First we are going to start with 
+ ``` 
+- name: setup system
+
+  hosts: localhost
+
+  tasks:
+
+   - name: azure create
+
+     azure_rm_deployment:
+
+         resource_group: AZ500mod2lab2
+
+         location: east US
+
+         state: present
+
+         name: az500mod2lab2
+
+         template_link: 'https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab02/template.json'
+```
+         
+
+The Second File Below is AZ Security Baseline and includes the ability to pass parameters.
+
 
 <div class="yaml"> 
 
