@@ -1,6 +1,11 @@
 # AzureSecurityBaseline
 Azure Security Baseline
 
+Welcome to Our Demo of Ansible on Azure. 
+    - What is Ansible
+    - The basics of writing a playbook
+    - How to use Azure Resource Manager 
+    - Using Azure Resource Manager to handle templetes in Ansible. 
 
 We are going to Use Red Hat Software Ansible to help with the Security Baseline Deployment & AZ-500 Deployment. 
 
