@@ -10,7 +10,7 @@
    - name: azure create resource group
 # the name once again can be whichever we would like to help us understand what is happening later on
 
-     azure_rm_deployment:
+     azure_rm_resourcegroup:
      # this task above is the Azure Resource Manager and can be used to help manage your azure infrastructure
 
          resource_group: aztestsynnex
