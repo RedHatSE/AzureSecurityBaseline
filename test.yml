@@ -12,11 +12,10 @@
 
      azure_rm_resourcegroup:
      # this task above is the Azure Resource Manager and can be used to help manage your azure infrastructure
-
-         resource_group: aztestsynnex
-     # this will be the name of the test resource group we are going to create
+   
          location: east US
      
          state: present
      # we can use another flag as present to create and is idempotent and will not be able to be ran if another is present or we can run absent to remove the azure Resource Group altogether. 
          name: test
+      # this will be the name of the test resource group we are going to create
