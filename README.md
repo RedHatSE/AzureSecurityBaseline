@@ -12,6 +12,8 @@ We are going to Use Red Hat Software Ansible to help with the Security Baseline 
 Login to your Azure infrastructure & open up and AzureCLI. 
 ![image](images/azurecli.png)
 
+After you click the shell you need to ensure it is in bash. 
+!(images/Azureansible.png)
 
 and create a file .yml and include the following text. I have also already completed them within this repo for you. 
 
