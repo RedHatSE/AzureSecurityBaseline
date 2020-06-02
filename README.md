@@ -9,7 +9,9 @@ Welcome to Our Demo of Ansible on Azure.
 
 We are going to Use Red Hat Software Ansible to help with the Security Baseline Deployment & AZ-500 Deployment. 
 
-First open up and AzureCLI. 
+Login to your Azure infrastructure & open up and AzureCLI. 
+![image](images/azurecli.png)
+
 
 and create a file .yml and include the following text. I have also already completed them within this repo for you. 
 
