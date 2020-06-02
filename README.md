@@ -20,7 +20,28 @@ After you click the shell you need to ensure it is in bash. You will see the fol
 I am going to Break Down as sample oh an Ansible YAML File
 
 ``` 
- 
+- name: setup system 
+# Above is a name comment and can be named whatever you would like
+
+  hosts: localhost
+# the Hosts: is an indication of were ansible is going to run the commands from. In this scenario we are going to run it right from the AzureCLI
+
+  tasks:
+# Everything Below this task line will be indented as it will be nested under Tasks. 
+
+   - name: azure create resource group
+# the name once again can be whichever we would like to help us understand what is happening later on
+
+     azure_rm_deployment:
+     # this task above is the Azure Resource Manager and can be used to help manage your azure infrastructure
+
+         resource_group: aztestsynnex
+     # this will be the name of the test resource group we are going to create
+         location: east US
+     
+         state: present
+     # we can use another flag as present to create and is idempotent and will not be able to be ran if another is present or we can run absent to remove the azure Resource Group altogether. 
+        
 ```         
 
 and create a file .yml and include the following text. I have also already completed them within this repo for you. 
