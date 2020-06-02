@@ -17,6 +17,12 @@ After you click the shell you need to ensure it is in bash. You will see the fol
 
 ![image2](images/Azureansible.png)
 
+I am going to Break Down as sample oh an Ansible YAML File
+
+``` 
+ 
+```         
+
 and create a file .yml and include the following text. I have also already completed them within this repo for you. 
 
  ``` 
