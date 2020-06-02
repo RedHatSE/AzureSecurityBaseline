@@ -19,4 +19,4 @@
      
          state: present
      # we can use another flag as present to create and is idempotent and will not be able to be ran if another is present or we can run absent to remove the azure Resource Group altogether. 
-        
+         name: test
