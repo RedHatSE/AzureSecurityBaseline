@@ -20,7 +20,7 @@
 
          parameters:
 
-              adminUsername:
+             adminUsername:
 
                       value: wsadmin
 
