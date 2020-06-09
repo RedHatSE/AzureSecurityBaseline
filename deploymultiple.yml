@@ -1,0 +1,25 @@
+---
+- name: setup all labs
+
+  hosts: localhost
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+
+   - name: azure create
+
+     azure_rm_deployment:
+
+         resource_group: "{{item.value.labname}}"
+
+         location: east US
+
+         state: present
+
+         name: "{{item.value.labname}}"
+
+         template_link: "{{item.value.name}}"
+
+     with_dict: "{{labs}}"
