@@ -66,6 +66,7 @@ and create a file .yml and include the following text. I have also already compl
          name: az500mod2lab2
 
          template_link: 'https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab02/template.json'
+
 ```
          
 
