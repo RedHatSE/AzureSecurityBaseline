@@ -1,0 +1,11 @@
+---
+labs:
+  mod2lab2:
+    name: https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab02/template.json
+    labname: az500module2lab2
+  mod2lab1:
+    name: https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab01/template.json
+    labname: az500module2lab1
+  lab2lab11:
+    name: https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab11/template.json
+    labname: Test-FW-RG
