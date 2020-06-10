@@ -126,6 +126,7 @@ The Second File Below is AZ Security Baseline and includes the ability to pass p
 ```
 </div>
 What we can also do is deploy multiple templates. I have created a playbook template x2 two files deploy.yml and the vars.yml file to be modified as to fit your template need. feel free to modify as needed.
+
 ```
 ---
 - name: setup all labs
@@ -153,11 +154,11 @@ What we can also do is deploy multiple templates. I have created a playbook temp
 
      with_dict: "{{labs}}"
      
-`````  
+```  
 
 Vars.yml file
 
-````
+```
 ---
 labs:
   mod2lab2:
@@ -170,7 +171,7 @@ labs:
     name: https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab11/template.json
     labname: Test-FW-RG
 
-````
+```
 
 The next set of inscrutions are located here for the AZ Security Baseline. 
 
