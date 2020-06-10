@@ -127,6 +127,8 @@ The Second File Below is AZ Security Baseline and includes the ability to pass p
 </div>
 What we can also do is deploy multiple templates. I have created a playbook template x2 two files deploy.yml and the vars.yml file to be modified as to fit your template need. feel free to modify as needed.
 
+Deploy.yml
+
 ```
 ---
 - name: setup all labs
@@ -156,7 +158,7 @@ What we can also do is deploy multiple templates. I have created a playbook temp
      
 ```  
 
-Vars.yml file
+vars.yml file
 
 ```
 ---
