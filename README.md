@@ -169,7 +169,8 @@ labs:
   lab2lab11:
     name: https://raw.githubusercontent.com/MicrosoftLearning/AZ-500-Azure-Security/master/Allfiles/Labs/Mod2_Lab11/template.json
     labname: Test-FW-RG
-````    
+
+````
 
 The next set of inscrutions are located here for the AZ Security Baseline. 
 
