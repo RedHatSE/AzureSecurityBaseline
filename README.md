@@ -2,10 +2,10 @@
 Azure Security Baseline
 
 Welcome to Our Demo of Ansible on Azure. 
-    - What is Ansible
-    - The basics of writing a playbook
-    - How to use Azure Resource Manager 
-    - Using Azure Resource Manager to handle templetes in Ansible. 
+    <br>- What is Ansible
+    <br>- The basics of writing a playbook
+    <br>- How to use Azure Resource Manager 
+    <br>- Using Azure Resource Manager to handle templetes in Ansible. 
 
 We are going to Use Red Hat Software Ansible to help with the Security Baseline Deployment & AZ-500 Deployment. 
 
@@ -13,11 +13,11 @@ Login to your Azure infrastructure & open up and AzureCLI.
 
 ![image](images/azurecli.png)
 
-After you click the shell you need to ensure it is in bash. You will see the following. Ansible is already installed.  
+After you click the shell you need to ensure it is in bash. You will see the following as Ansible is already installed.  
 
 ![image2](images/Azureansible.png)
 
-I am going to Break Down as sample oh an Ansible YAML File
+I am going to Break Down a sample on an Ansible YAML File
 
 ``` 
 - name: setup system 
@@ -32,7 +32,7 @@ I am going to Break Down as sample oh an Ansible YAML File
    - name: azure create resource group
 # the name once again can be whichever we would like to help us understand what is happening later on
 
-     azure_rm_deployment:
+     azure_rm_resourcegroup:
      # this task above is the Azure Resource Manager and can be used to help manage your azure infrastructure
 
          resource_group: aztestsynnex
@@ -43,8 +43,11 @@ I am going to Break Down as sample oh an Ansible YAML File
      # we can use another flag as present to create and is idempotent and will not be able to be ran if another is present or we can run absent to remove the azure Resource Group altogether. 
         
 ```         
+Below is an Example of a Ansible playbook built to Deploy your Azure template. az500mod2lab2
 
-and create a file .yml and include the following text. I have also already completed them within this repo for you. 
+please create a file az500mod2.yml and include the following text. 
+
+I have also already completed them within this repo for you. 
 
  ``` 
 - name: setup system
@@ -70,7 +73,9 @@ and create a file .yml and include the following text. I have also already compl
 ```
          
 
-The Second File Below is AZ Security Baseline and includes the ability to pass parameters.
+The Second File Below is AZ Security Baseline template within an ansible plays and includes the ability to pass parameters.
+
+I have completed this for you above or you can create a template named azbaseline.yml. Also you can change the paramaters and you will need your user object id which is empty below. 
 
 
 <div class="yaml"> 
@@ -125,7 +130,10 @@ The Second File Below is AZ Security Baseline and includes the ability to pass p
 
 ```
 </div>
-What we can also do is deploy multiple templates. I have created a playbook template x2 two files deploy.yml and the vars.yml file to be modified as to fit your template need. feel free to modify as needed.
+
+We can also deploy multiple templates. I have created a playbook template x2 two files deploy.yml and the vars.yml file to 
+
+be modified as to fit your template need. feel free to modify as needed.
 
 Deploy.yml
 
@@ -159,7 +167,7 @@ Deploy.yml
 ```  
 
 vars.yml file
-
+(This File includes all of the variables to pass to the Deploy.yml above.)
 ```
 ---
 labs:
